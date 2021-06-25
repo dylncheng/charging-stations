@@ -13,10 +13,18 @@ r = requests.get(f'https://opendata.vancouver.ca/api/records/1.0/search/?dataset
 content = r.json()
 pprint.pprint(content)
 
-charging_stations = {}
+charging_stations = {
+    'addresses': [],
+    'coordinates': []
+}
 
 for station in content['records']:
-    charging_stations[station['fields']['address']] = station['fields']['geom']['coordinates']
+    print(station['fields']['address'])
+    print(station['fields']['geom']['coordinates'])
+
+    charging_stations['addresses'].append(station['fields']['address'])
+    charging_stations['coordinates'].append(station['fields']['geom']['coordinates'])
+
 
 
 pprint.pprint(charging_stations)
@@ -28,12 +36,12 @@ map = folium.Map(
 )
 
 
-print(len(charging_stations))
-
-for (sta, loc) in charging_stations.items():
+for i in range(len(charging_stations['addresses'])):
+    longitude, latitude = charging_stations['coordinates'].pop(0)
+    address = charging_stations['addresses'].pop(0)
     folium.Marker(
-        location=(loc[1], loc[0]),
-        popup=sta,
+        location=(latitude, longitude),
+        popup=address,
         icon=folium.Icon(color='blue', icon="map-pin", prefix='fa')
     ).add_to(map)
 
