@@ -15,6 +15,7 @@ charging_stations = {
 }
 
 for station in content['records']:
+    charging_stations['operators'].append(station['fields']['lot_operator'])
     charging_stations['addresses'].append(station['fields']['address'])
     charging_stations['coordinates'].append(station['fields']['geom']['coordinates'])
 
@@ -27,10 +28,11 @@ map = folium.Map(
 
 for i in range(len(charging_stations['addresses'])):
     longitude, latitude = charging_stations['coordinates'].pop(0)
-    address = charging_stations['addresses'].pop(0)
+    info = '<b>' + charging_stations['operators'].pop(0) + '</b>' 
+    + '</br>' + charging_stations['addresses'].pop(0)
     folium.Marker(
         location=(latitude, longitude),
-        popup=address,
+        popup=info,
         icon=folium.Icon(color='blue', icon="map-pin", prefix='fa')
     ).add_to(map)
 
