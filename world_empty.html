@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5396c8d1e59a4993a77119729f981dc9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_5396c8d1e59a4993a77119729f981dc9" ></div>
+        
+</body>
+<script>    
+    
+            var map_5396c8d1e59a4993a77119729f981dc9 = L.map(
+                "map_5396c8d1e59a4993a77119729f981dc9",
+                {
+                    center: [49.2827, -123.1207],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ca832b4d5ed540acbae0fe567b9fa8f5 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5396c8d1e59a4993a77119729f981dc9);
+        
+    
+            var marker_7308bcbd9aa54ee4911febbaa88e6d4e = L.marker(
+                [49.283155, -123.142173],
+                {}
+            ).addTo(map_5396c8d1e59a4993a77119729f981dc9);
+        
+    
+            var icon_32b19af707a74079bcb513aa058dcf92 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-pin", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_7308bcbd9aa54ee4911febbaa88e6d4e.setIcon(icon_32b19af707a74079bcb513aa058dcf92);
+        
+    
+        var popup_05c5dcb108874582aca280fd5c4baa99 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f26c6abefcce44f09259a2556275f8d6 = $(`<div id="html_f26c6abefcce44f09259a2556275f8d6" style="width: 100.0%; height: 100.0%;">Beach Ave. @ Cardero St</div>`)[0];
+            popup_05c5dcb108874582aca280fd5c4baa99.setContent(html_f26c6abefcce44f09259a2556275f8d6);
+        
+
+        marker_7308bcbd9aa54ee4911febbaa88e6d4e.bindPopup(popup_05c5dcb108874582aca280fd5c4baa99)
+        ;
+
+        
+    
+    
+            var marker_824958bb9fad4e60a797cb3248196227 = L.marker(
+                [49.2641594, -123.1002054],
+                {}
+            ).addTo(map_5396c8d1e59a4993a77119729f981dc9);
+        
+    
+            var icon_714eeeb5d8c34ea29228791f09261054 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-pin", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_824958bb9fad4e60a797cb3248196227.setIcon(icon_714eeeb5d8c34ea29228791f09261054);
+        
+    
+        var popup_e75af9099a7b4d4688e52ee7f8d3105d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1a7b485a60d84bee855914aa6a4b0eff = $(`<div id="html_1a7b485a60d84bee855914aa6a4b0eff" style="width: 100.0%; height: 100.0%;">1 Kingsway</div>`)[0];
+            popup_e75af9099a7b4d4688e52ee7f8d3105d.setContent(html_1a7b485a60d84bee855914aa6a4b0eff);
+        
+
+        marker_824958bb9fad4e60a797cb3248196227.bindPopup(popup_e75af9099a7b4d4688e52ee7f8d3105d)
+        ;
+
+        
+    
+    
+            var marker_f04ff79136d34da4bb0b17dc93bd251c = L.marker(
+                [49.243665, -123.106578],
+                {}
+            ).addTo(map_5396c8d1e59a4993a77119729f981dc9);
+        
+    
+            var icon_fbe53286dfe64629baf876ac311e21ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-pin", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_f04ff79136d34da4bb0b17dc93bd251c.setIcon(icon_fbe53286dfe64629baf876ac311e21ae);
+        
+    
+        var popup_479691c548e64d22bda72ca293429b3e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a8082a4ec70a4fd0a3435d9459b1126f = $(`<div id="html_a8082a4ec70a4fd0a3435d9459b1126f" style="width: 100.0%; height: 100.0%;">4575 Clancy Loranger Way</div>`)[0];
+            popup_479691c548e64d22bda72ca293429b3e.setContent(html_a8082a4ec70a4fd0a3435d9459b1126f);
+        
+
+        marker_f04ff79136d34da4bb0b17dc93bd251c.bindPopup(popup_479691c548e64d22bda72ca293429b3e)
+        ;
+
+        
+    
+    
+            var marker_c0e7616b45a4462990b6d15a28ca81a9 = L.marker(
+                [49.299534, -123.13022],
+                {}
+            ).addTo(map_5396c8d1e59a4993a77119729f981dc9);
+        
+    
+            var icon_55e0a995f6e44495a4cce6a4a3a8d8b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-pin", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_c0e7616b45a4462990b6d15a28ca81a9.setIcon(icon_55e0a995f6e44495a4cce6a4a3a8d8b7);
+        
+    
+        var popup_3f2bfd777d674edf8f11fb9c3dd9a9f0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ff641929690d48c5b9950d3a3850a1b3 = $(`<div id="html_ff641929690d48c5b9950d3a3850a1b3" style="width: 100.0%; height: 100.0%;">845 Avison Way</div>`)[0];
+            popup_3f2bfd777d674edf8f11fb9c3dd9a9f0.setContent(html_ff641929690d48c5b9950d3a3850a1b3);
+        
+
+        marker_c0e7616b45a4462990b6d15a28ca81a9.bindPopup(popup_3f2bfd777d674edf8f11fb9c3dd9a9f0)
+        ;
+
+        
+    
+    
+            var marker_e284ca061a68422082b8fde3e372cec0 = L.marker(
+                [49.222235022762, -123.100095218575],
+                {}
+            ).addTo(map_5396c8d1e59a4993a77119729f981dc9);
+        
+    
+            var icon_37c93e0586f243d9a2c4bcdd57e81d1d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-pin", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e284ca061a68422082b8fde3e372cec0.setIcon(icon_37c93e0586f243d9a2c4bcdd57e81d1d);
+        
+    
+        var popup_72a24124c39242cba8e640c91ef4ca13 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aacfbc5a02ad4121ab2b55a9104447c3 = $(`<div id="html_aacfbc5a02ad4121ab2b55a9104447c3" style="width: 100.0%; height: 100.0%;">273 E 53rd Ave</div>`)[0];
+            popup_72a24124c39242cba8e640c91ef4ca13.setContent(html_aacfbc5a02ad4121ab2b55a9104447c3);
+        
+
+        marker_e284ca061a68422082b8fde3e372cec0.bindPopup(popup_72a24124c39242cba8e640c91ef4ca13)
+        ;
+
+        
+    
+    
+            var marker_15fc166637ca4a28b88fdcd0f066d948 = L.marker(
+                [49.281369, -123.033786],
+                {}
+            ).addTo(map_5396c8d1e59a4993a77119729f981dc9);
+        
+    
+            var icon_9258ad310a994d67ace9ba56c5189683 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-pin", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_15fc166637ca4a28b88fdcd0f066d948.setIcon(icon_9258ad310a994d67ace9ba56c5189683);
+        
+    
+        var popup_978a23e9f280425cb01d61ce2749bbb3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9afa4b321d7f4e22988994acef784392 = $(`<div id="html_9afa4b321d7f4e22988994acef784392" style="width: 100.0%; height: 100.0%;">3311 E. Hastings</div>`)[0];
+            popup_978a23e9f280425cb01d61ce2749bbb3.setContent(html_9afa4b321d7f4e22988994acef784392);
+        
+
+        marker_15fc166637ca4a28b88fdcd0f066d948.bindPopup(popup_978a23e9f280425cb01d61ce2749bbb3)
+        ;
+
+        
+    
+    
+            var marker_2990032da7484194bc2d250982327763 = L.marker(
+                [49.2769232201811, -123.119261061127],
+                {}
+            ).addTo(map_5396c8d1e59a4993a77119729f981dc9);
+        
+    
+            var icon_70db0a1d13da41ce84be5817e8834c5b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-pin", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_2990032da7484194bc2d250982327763.setIcon(icon_70db0a1d13da41ce84be5817e8834c5b);
+        
+    
+        var popup_080834ae0fbe4482b5b644a7c0d9ecdf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cc1a82fbe7004c0ca511778b0658dd1c = $(`<div id="html_cc1a82fbe7004c0ca511778b0658dd1c" style="width: 100.0%; height: 100.0%;">959-979 Mainland St</div>`)[0];
+            popup_080834ae0fbe4482b5b644a7c0d9ecdf.setContent(html_cc1a82fbe7004c0ca511778b0658dd1c);
+        
+
+        marker_2990032da7484194bc2d250982327763.bindPopup(popup_080834ae0fbe4482b5b644a7c0d9ecdf)
+        ;
+
+        
+    
+    
+            var marker_ebf1b376330b4a4eb97462084280aca2 = L.marker(
+                [49.272514, -123.12833],
+                {}
+            ).addTo(map_5396c8d1e59a4993a77119729f981dc9);
+        
+    
+            var icon_dc19d484ed354429b6dae8e174830341 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-pin", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ebf1b376330b4a4eb97462084280aca2.setIcon(icon_dc19d484ed354429b6dae8e174830341);
+        
+    
+        var popup_ddb0c98c7e1c4974bdf89ff71e7b99be = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e998fe7900e94631aa97eed57db43268 = $(`<div id="html_e998fe7900e94631aa97eed57db43268" style="width: 100.0%; height: 100.0%;">451 Beach Crescent</div>`)[0];
+            popup_ddb0c98c7e1c4974bdf89ff71e7b99be.setContent(html_e998fe7900e94631aa97eed57db43268);
+        
+
+        marker_ebf1b376330b4a4eb97462084280aca2.bindPopup(popup_ddb0c98c7e1c4974bdf89ff71e7b99be)
+        ;
+
+        
+    
+    
+            var marker_98ef46e1f2714fd6b0d920fbabd7846c = L.marker(
+                [49.229928611422, -123.09135336453],
+                {}
+            ).addTo(map_5396c8d1e59a4993a77119729f981dc9);
+        
+    
+            var icon_786b583c5aee4f87b30b0c1f1073d324 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-pin", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_98ef46e1f2714fd6b0d920fbabd7846c.setIcon(icon_786b583c5aee4f87b30b0c1f1073d324);
+        
+    
+        var popup_1b0d5373281e446085ecc96fe56d3835 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_198148d2fdd54ac0bc9a87ab4902b1b2 = $(`<div id="html_198148d2fdd54ac0bc9a87ab4902b1b2" style="width: 100.0%; height: 100.0%;">646 E. 44th Ave</div>`)[0];
+            popup_1b0d5373281e446085ecc96fe56d3835.setContent(html_198148d2fdd54ac0bc9a87ab4902b1b2);
+        
+
+        marker_98ef46e1f2714fd6b0d920fbabd7846c.bindPopup(popup_1b0d5373281e446085ecc96fe56d3835)
+        ;
+
+        
+    
+    
+            var marker_17e8ca90cd0a44fab33b5f58b88c8914 = L.marker(
+                [49.2745, -123.09247],
+                {}
+            ).addTo(map_5396c8d1e59a4993a77119729f981dc9);
+        
+    
+            var icon_1d422ffdfe984fbbbe25cb5a7831ef20 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-pin", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_17e8ca90cd0a44fab33b5f58b88c8914.setIcon(icon_1d422ffdfe984fbbbe25cb5a7831ef20);
+        
+    
+        var popup_b6a64a27dd35414b8c53a07c67f4854c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_62f60f3ecc7145f3aa6dffcd13143b79 = $(`<div id="html_62f60f3ecc7145f3aa6dffcd13143b79" style="width: 100.0%; height: 100.0%;">Trillium Park</div>`)[0];
+            popup_b6a64a27dd35414b8c53a07c67f4854c.setContent(html_62f60f3ecc7145f3aa6dffcd13143b79);
+        
+
+        marker_17e8ca90cd0a44fab33b5f58b88c8914.bindPopup(popup_b6a64a27dd35414b8c53a07c67f4854c)
+        ;
+
+        
+    
+    
+            var marker_656a99f6039b4bd99e7ab1b95a2f85a2 = L.marker(
+                [49.29024, -123.125786],
+                {}
+            ).addTo(map_5396c8d1e59a4993a77119729f981dc9);
+        
+    
+            var icon_2904472248264633a225396bb6987334 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-pin", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_656a99f6039b4bd99e7ab1b95a2f85a2.setIcon(icon_2904472248264633a225396bb6987334);
+        
+    
+        var popup_1797c1b212a046cea2f30cc8d6298351 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3242d257281a4073aa323271a93afbfa = $(`<div id="html_3242d257281a4073aa323271a93afbfa" style="width: 100.0%; height: 100.0%;">480 Broughton Street</div>`)[0];
+            popup_1797c1b212a046cea2f30cc8d6298351.setContent(html_3242d257281a4073aa323271a93afbfa);
+        
+
+        marker_656a99f6039b4bd99e7ab1b95a2f85a2.bindPopup(popup_1797c1b212a046cea2f30cc8d6298351)
+        ;
+
+        
+    
+    
+            var marker_a677d53926bf4c4b8455b9c6c9d65a3a = L.marker(
+                [49.243681, -123.106551],
+                {}
+            ).addTo(map_5396c8d1e59a4993a77119729f981dc9);
+        
+    
+            var icon_7506be1cd4544ab39fbed9069de24d7d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-pin", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a677d53926bf4c4b8455b9c6c9d65a3a.setIcon(icon_7506be1cd4544ab39fbed9069de24d7d);
+        
+    
+        var popup_07ad87bec61f41e5af310cf44143c8e4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0052e7107fc94095ad103123492f2553 = $(`<div id="html_0052e7107fc94095ad103123492f2553" style="width: 100.0%; height: 100.0%;">4575 Clancy Loranger Way</div>`)[0];
+            popup_07ad87bec61f41e5af310cf44143c8e4.setContent(html_0052e7107fc94095ad103123492f2553);
+        
+
+        marker_a677d53926bf4c4b8455b9c6c9d65a3a.bindPopup(popup_07ad87bec61f41e5af310cf44143c8e4)
+        ;
+
+        
+    
+    
+            var marker_f05346bf23814c0aad75371ee46c8ef6 = L.marker(
+                [49.283672, -123.1173],
+                {}
+            ).addTo(map_5396c8d1e59a4993a77119729f981dc9);
+        
+    
+            var icon_e8aecb575c544aac86a5df9227ee88bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-pin", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_f05346bf23814c0aad75371ee46c8ef6.setIcon(icon_e8aecb575c544aac86a5df9227ee88bc);
+        
+    
+        var popup_8797aad6f7db483dbe65c16ddd489ef9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d0e1776cb7c94663a4418d37084f29e0 = $(`<div id="html_d0e1776cb7c94663a4418d37084f29e0" style="width: 100.0%; height: 100.0%;">701 W. Georgia St.</div>`)[0];
+            popup_8797aad6f7db483dbe65c16ddd489ef9.setContent(html_d0e1776cb7c94663a4418d37084f29e0);
+        
+
+        marker_f05346bf23814c0aad75371ee46c8ef6.bindPopup(popup_8797aad6f7db483dbe65c16ddd489ef9)
+        ;
+
+        
+    
+    
+            var marker_104d472802b1470abab397a4a31848ce = L.marker(
+                [49.281483, -123.139793],
+                {}
+            ).addTo(map_5396c8d1e59a4993a77119729f981dc9);
+        
+    
+            var icon_4fa8ef34a9f44025b12bce9c689bd120 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-pin", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_104d472802b1470abab397a4a31848ce.setIcon(icon_4fa8ef34a9f44025b12bce9c689bd120);
+        
+    
+        var popup_81d766873c27413bacd21e3e6acb22a3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4e7cbf62b6e2487088c188abdeb00131 = $(`<div id="html_4e7cbf62b6e2487088c188abdeb00131" style="width: 100.0%; height: 100.0%;">Beach Ave. @ Broughton St</div>`)[0];
+            popup_81d766873c27413bacd21e3e6acb22a3.setContent(html_4e7cbf62b6e2487088c188abdeb00131);
+        
+
+        marker_104d472802b1470abab397a4a31848ce.bindPopup(popup_81d766873c27413bacd21e3e6acb22a3)
+        ;
+
+        
+    
+    
+            var marker_a15c1e9085d24f06b7b1764a0288d682 = L.marker(
+                [49.273797, -123.152654],
+                {}
+            ).addTo(map_5396c8d1e59a4993a77119729f981dc9);
+        
+    
+            var icon_53aa80aa58cd41bd81e96fa0a7a6d97e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-pin", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a15c1e9085d24f06b7b1764a0288d682.setIcon(icon_53aa80aa58cd41bd81e96fa0a7a6d97e);
+        
+    
+        var popup_bbbc32df750e4a42b3698d2e17fc2721 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d1d0e55ef0b840b2bb4a5a069edbdcc9 = $(`<div id="html_d1d0e55ef0b840b2bb4a5a069edbdcc9" style="width: 100.0%; height: 100.0%;">1305 Arbutus St</div>`)[0];
+            popup_bbbc32df750e4a42b3698d2e17fc2721.setContent(html_d1d0e55ef0b840b2bb4a5a069edbdcc9);
+        
+
+        marker_a15c1e9085d24f06b7b1764a0288d682.bindPopup(popup_bbbc32df750e4a42b3698d2e17fc2721)
+        ;
+
+        
+    
+    
+            var marker_51ea716e92b64e39af7b2b139455fca6 = L.marker(
+                [49.243665, -123.106617],
+                {}
+            ).addTo(map_5396c8d1e59a4993a77119729f981dc9);
+        
+    
+            var icon_5dcf39318a18403cb072bf591c49cc09 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-pin", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_51ea716e92b64e39af7b2b139455fca6.setIcon(icon_5dcf39318a18403cb072bf591c49cc09);
+        
+    
+        var popup_0501d97f23cc423599509f752c63105d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5030018ac90942b5a6457d5d16580ac4 = $(`<div id="html_5030018ac90942b5a6457d5d16580ac4" style="width: 100.0%; height: 100.0%;">4575 Clancy Loranger Way</div>`)[0];
+            popup_0501d97f23cc423599509f752c63105d.setContent(html_5030018ac90942b5a6457d5d16580ac4);
+        
+
+        marker_51ea716e92b64e39af7b2b139455fca6.bindPopup(popup_0501d97f23cc423599509f752c63105d)
+        ;
+
+        
+    
+    
+            var marker_6a9dcfde11cb49bba5982d3cb9cad676 = L.marker(
+                [49.277692, -123.124668],
+                {}
+            ).addTo(map_5396c8d1e59a4993a77119729f981dc9);
+        
+    
+            var icon_c57413ec5f084a778d027fe1c301f6a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-pin", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_6a9dcfde11cb49bba5982d3cb9cad676.setIcon(icon_c57413ec5f084a778d027fe1c301f6a3);
+        
+    
+        var popup_7f655278ac3446aba77f3b2837a59404 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5e5926e39a694991982b9bb5dd29e321 = $(`<div id="html_5e5926e39a694991982b9bb5dd29e321" style="width: 100.0%; height: 100.0%;">1100 Granville St</div>`)[0];
+            popup_7f655278ac3446aba77f3b2837a59404.setContent(html_5e5926e39a694991982b9bb5dd29e321);
+        
+
+        marker_6a9dcfde11cb49bba5982d3cb9cad676.bindPopup(popup_7f655278ac3446aba77f3b2837a59404)
+        ;
+
+        
+    
+    
+            var marker_5f9f0c7fef8349b8a1d5ada10d9f6473 = L.marker(
+                [49.276066, -123.071246],
+                {}
+            ).addTo(map_5396c8d1e59a4993a77119729f981dc9);
+        
+    
+            var icon_99ddbd93f551470f9b88be002c64beba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-pin", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_5f9f0c7fef8349b8a1d5ada10d9f6473.setIcon(icon_99ddbd93f551470f9b88be002c64beba);
+        
+    
+        var popup_b820e914014b4590895b2e33aee06354 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cacf0a15fec34d538a594600406257af = $(`<div id="html_cacf0a15fec34d538a594600406257af" style="width: 100.0%; height: 100.0%;">1001 Cotton Dr</div>`)[0];
+            popup_b820e914014b4590895b2e33aee06354.setContent(html_cacf0a15fec34d538a594600406257af);
+        
+
+        marker_5f9f0c7fef8349b8a1d5ada10d9f6473.bindPopup(popup_b820e914014b4590895b2e33aee06354)
+        ;
+
+        
+    
+    
+            var marker_060cd5dd48454b01b6926945575d590b = L.marker(
+                [49.286384777239, -123.043494521322],
+                {}
+            ).addTo(map_5396c8d1e59a4993a77119729f981dc9);
+        
+    
+            var icon_bd92548857ee466d85993c9de60d559e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-pin", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_060cd5dd48454b01b6926945575d590b.setIcon(icon_bd92548857ee466d85993c9de60d559e);
+        
+    
+        var popup_7fbe29480d9c4ff08d75b349ff4867f2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e596766d91db47c29636c6411ee1ef75 = $(`<div id="html_e596766d91db47c29636c6411ee1ef75" style="width: 100.0%; height: 100.0%;">225 N Renfrew St</div>`)[0];
+            popup_7fbe29480d9c4ff08d75b349ff4867f2.setContent(html_e596766d91db47c29636c6411ee1ef75);
+        
+
+        marker_060cd5dd48454b01b6926945575d590b.bindPopup(popup_7fbe29480d9c4ff08d75b349ff4867f2)
+        ;
+
+        
+    
+    
+            var marker_25d260a55c0249beb342925b24a54744 = L.marker(
+                [49.26122, -123.11374],
+                {}
+            ).addTo(map_5396c8d1e59a4993a77119729f981dc9);
+        
+    
+            var icon_57130cba2f534bcebeba9ad21d36d046 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-pin", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_25d260a55c0249beb342925b24a54744.setIcon(icon_57130cba2f534bcebeba9ad21d36d046);
+        
+    
+        var popup_ba81b6a7d69a4472a72c1c599204ba5c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ebb240a6ca834254af732baa15b2fa10 = $(`<div id="html_ebb240a6ca834254af732baa15b2fa10" style="width: 100.0%; height: 100.0%;">453 W. 12th Ave</div>`)[0];
+            popup_ba81b6a7d69a4472a72c1c599204ba5c.setContent(html_ebb240a6ca834254af732baa15b2fa10);
+        
+
+        marker_25d260a55c0249beb342925b24a54744.bindPopup(popup_ba81b6a7d69a4472a72c1c599204ba5c)
+        ;
+
+        
+    
+    
+            var marker_865395564b564392993fcf2fafff23b5 = L.marker(
+                [49.2297756397356, -123.091360028172],
+                {}
+            ).addTo(map_5396c8d1e59a4993a77119729f981dc9);
+        
+    
+            var icon_ce890bf34f30474f8a75b4059f029787 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-pin", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_865395564b564392993fcf2fafff23b5.setIcon(icon_ce890bf34f30474f8a75b4059f029787);
+        
+    
+        var popup_e676a58f32514339805b35d3a97ed9d3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ca5c9e36737245edacd2c5e9a818ccf5 = $(`<div id="html_ca5c9e36737245edacd2c5e9a818ccf5" style="width: 100.0%; height: 100.0%;">646 E. 44th Ave</div>`)[0];
+            popup_e676a58f32514339805b35d3a97ed9d3.setContent(html_ca5c9e36737245edacd2c5e9a818ccf5);
+        
+
+        marker_865395564b564392993fcf2fafff23b5.bindPopup(popup_e676a58f32514339805b35d3a97ed9d3)
+        ;
+
+        
+    
+    
+            var marker_e752feba25fe42a690c03e384f3ba771 = L.marker(
+                [49.274567, -123.09245],
+                {}
+            ).addTo(map_5396c8d1e59a4993a77119729f981dc9);
+        
+    
+            var icon_9b11a7f2863246519c27a91253da4e7f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-pin", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e752feba25fe42a690c03e384f3ba771.setIcon(icon_9b11a7f2863246519c27a91253da4e7f);
+        
+    
+        var popup_4bf67375dd6b43018e8c88b8ceb9331c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0c0f0c4345e84091926dd08f4972687a = $(`<div id="html_0c0f0c4345e84091926dd08f4972687a" style="width: 100.0%; height: 100.0%;">Trillium Park</div>`)[0];
+            popup_4bf67375dd6b43018e8c88b8ceb9331c.setContent(html_0c0f0c4345e84091926dd08f4972687a);
+        
+
+        marker_e752feba25fe42a690c03e384f3ba771.bindPopup(popup_4bf67375dd6b43018e8c88b8ceb9331c)
+        ;
+
+        
+    
+    
+            var marker_0a06ebe6825747c1bcdc933480758d30 = L.marker(
+                [49.300472054096, -123.130229213422],
+                {}
+            ).addTo(map_5396c8d1e59a4993a77119729f981dc9);
+        
+    
+            var icon_e9b7067b93e9473ab3587e62332196ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-pin", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_0a06ebe6825747c1bcdc933480758d30.setIcon(icon_e9b7067b93e9473ab3587e62332196ca);
+        
+    
+        var popup_00572bbf32944d7db7162d3168b88ded = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ed762ee68c82456b8aa1ef995253013f = $(`<div id="html_ed762ee68c82456b8aa1ef995253013f" style="width: 100.0%; height: 100.0%;">845 Avison Way</div>`)[0];
+            popup_00572bbf32944d7db7162d3168b88ded.setContent(html_ed762ee68c82456b8aa1ef995253013f);
+        
+
+        marker_0a06ebe6825747c1bcdc933480758d30.bindPopup(popup_00572bbf32944d7db7162d3168b88ded)
+        ;
+
+        
+    
+    
+            var marker_f1e80dcc9e3744b4be5ac20dfb3d2c61 = L.marker(
+                [49.278736, -123.137209],
+                {}
+            ).addTo(map_5396c8d1e59a4993a77119729f981dc9);
+        
+    
+            var icon_f051262d94fa4c19a98b6d413957e23d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-pin", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_f1e80dcc9e3744b4be5ac20dfb3d2c61.setIcon(icon_f051262d94fa4c19a98b6d413957e23d);
+        
+    
+        var popup_6febb56170654fc79984eda64ee56726 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f0cd6d66fabb4fd1a221b89d5c818d01 = $(`<div id="html_f0cd6d66fabb4fd1a221b89d5c818d01" style="width: 100.0%; height: 100.0%;">Beach Ave. @ Bute St</div>`)[0];
+            popup_6febb56170654fc79984eda64ee56726.setContent(html_f0cd6d66fabb4fd1a221b89d5c818d01);
+        
+
+        marker_f1e80dcc9e3744b4be5ac20dfb3d2c61.bindPopup(popup_6febb56170654fc79984eda64ee56726)
+        ;
+
+        
+    
+    
+            var marker_19d2f0fc7d5c4734a3c964ea01935bdc = L.marker(
+                [49.2795168591257, -123.115166014819],
+                {}
+            ).addTo(map_5396c8d1e59a4993a77119729f981dc9);
+        
+    
+            var icon_1d4bb1d2df9349afbcf3fc25f85d7ed3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-pin", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_19d2f0fc7d5c4734a3c964ea01935bdc.setIcon(icon_1d4bb1d2df9349afbcf3fc25f85d7ed3);
+        
+    
+        var popup_679faeef3b7548c0b46e43c9f5c72d5e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ba31fbc86e9a4e2c9dc16df41e01e494 = $(`<div id="html_ba31fbc86e9a4e2c9dc16df41e01e494" style="width: 100.0%; height: 100.0%;">775 Hamilton St</div>`)[0];
+            popup_679faeef3b7548c0b46e43c9f5c72d5e.setContent(html_ba31fbc86e9a4e2c9dc16df41e01e494);
+        
+
+        marker_19d2f0fc7d5c4734a3c964ea01935bdc.bindPopup(popup_679faeef3b7548c0b46e43c9f5c72d5e)
+        ;
+
+        
+    
+    
+            var marker_4584719e43db4ca8bcbd9b62141f0c45 = L.marker(
+                [49.2641313946177, -123.100173213491],
+                {}
+            ).addTo(map_5396c8d1e59a4993a77119729f981dc9);
+        
+    
+            var icon_1accc98770de486a9c0b3151e6e7c50f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-pin", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_4584719e43db4ca8bcbd9b62141f0c45.setIcon(icon_1accc98770de486a9c0b3151e6e7c50f);
+        
+    
+        var popup_e4c761007061445a83978bce76834a87 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9397b9fec053468b92f8f20d43dc0078 = $(`<div id="html_9397b9fec053468b92f8f20d43dc0078" style="width: 100.0%; height: 100.0%;">1 Kingsway</div>`)[0];
+            popup_e4c761007061445a83978bce76834a87.setContent(html_9397b9fec053468b92f8f20d43dc0078);
+        
+
+        marker_4584719e43db4ca8bcbd9b62141f0c45.bindPopup(popup_e4c761007061445a83978bce76834a87)
+        ;
+
+        
+    
+    
+            var marker_22d42896a67c43d2abe0460b93042a96 = L.marker(
+                [49.222282, -123.10009],
+                {}
+            ).addTo(map_5396c8d1e59a4993a77119729f981dc9);
+        
+    
+            var icon_a74a3f1fcc9b458785c24461d5ed1746 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-pin", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_22d42896a67c43d2abe0460b93042a96.setIcon(icon_a74a3f1fcc9b458785c24461d5ed1746);
+        
+    
+        var popup_d97305e8f813496b9eab41cd7b8a1642 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_16e75d51f405449aa5aecc5fabc925ce = $(`<div id="html_16e75d51f405449aa5aecc5fabc925ce" style="width: 100.0%; height: 100.0%;">272 E 53rd Ave</div>`)[0];
+            popup_d97305e8f813496b9eab41cd7b8a1642.setContent(html_16e75d51f405449aa5aecc5fabc925ce);
+        
+
+        marker_22d42896a67c43d2abe0460b93042a96.bindPopup(popup_d97305e8f813496b9eab41cd7b8a1642)
+        ;
+
+        
+    
+    
+            var marker_d5c576f49ce24ec682f0a334ae60cbbf = L.marker(
+                [49.226886, -123.129085],
+                {}
+            ).addTo(map_5396c8d1e59a4993a77119729f981dc9);
+        
+    
+            var icon_a6a6f7c20fc542fd97affe746296b21f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-pin", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_d5c576f49ce24ec682f0a334ae60cbbf.setIcon(icon_a6a6f7c20fc542fd97affe746296b21f);
+        
+    
+        var popup_513c7eed786b481f88be1bfa8b350bed = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7b898ccafe914da4b8c490bf3d793d16 = $(`<div id="html_7b898ccafe914da4b8c490bf3d793d16" style="width: 100.0%; height: 100.0%;">1025 W 49th Ave</div>`)[0];
+            popup_513c7eed786b481f88be1bfa8b350bed.setContent(html_7b898ccafe914da4b8c490bf3d793d16);
+        
+
+        marker_d5c576f49ce24ec682f0a334ae60cbbf.bindPopup(popup_513c7eed786b481f88be1bfa8b350bed)
+        ;
+
+        
+    
+    
+            var marker_0e43b3fbd449476ca800cd22a68a1fd1 = L.marker(
+                [49.27684, -123.11887],
+                {}
+            ).addTo(map_5396c8d1e59a4993a77119729f981dc9);
+        
+    
+            var icon_75a5e0a649f8474d8a5fae05d19a7d2f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-pin", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_0e43b3fbd449476ca800cd22a68a1fd1.setIcon(icon_75a5e0a649f8474d8a5fae05d19a7d2f);
+        
+    
+        var popup_a24ffe2b671d4b71bec9c2b6e557baa2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ddea540852c948a8a88fe6d876a68bc5 = $(`<div id="html_ddea540852c948a8a88fe6d876a68bc5" style="width: 100.0%; height: 100.0%;">959-979 Mainland St</div>`)[0];
+            popup_a24ffe2b671d4b71bec9c2b6e557baa2.setContent(html_ddea540852c948a8a88fe6d876a68bc5);
+        
+
+        marker_0e43b3fbd449476ca800cd22a68a1fd1.bindPopup(popup_a24ffe2b671d4b71bec9c2b6e557baa2)
+        ;
+
+        
+    
+    
+            var marker_87049dd9fd5847b38e39315b8843b42d = L.marker(
+                [49.261154, -123.11318],
+                {}
+            ).addTo(map_5396c8d1e59a4993a77119729f981dc9);
+        
+    
+            var icon_e47bd767f22a4db19668dfbd9bb71c87 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-pin", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_87049dd9fd5847b38e39315b8843b42d.setIcon(icon_e47bd767f22a4db19668dfbd9bb71c87);
+        
+    
+        var popup_4d63623c2066454b8b45c98c3b2d9000 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5b110e42d75d445ab950092bcc295129 = $(`<div id="html_5b110e42d75d445ab950092bcc295129" style="width: 100.0%; height: 100.0%;">453 W. 12th Ave</div>`)[0];
+            popup_4d63623c2066454b8b45c98c3b2d9000.setContent(html_5b110e42d75d445ab950092bcc295129);
+        
+
+        marker_87049dd9fd5847b38e39315b8843b42d.bindPopup(popup_4d63623c2066454b8b45c98c3b2d9000)
+        ;
+
+        
+    
+    
+            var marker_25c423a6076f4e3384f577c917da0377 = L.marker(
+                [49.261093, -123.11318],
+                {}
+            ).addTo(map_5396c8d1e59a4993a77119729f981dc9);
+        
+    
+            var icon_31d89488a5704607ac64ea85e38becaf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-pin", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_25c423a6076f4e3384f577c917da0377.setIcon(icon_31d89488a5704607ac64ea85e38becaf);
+        
+    
+        var popup_5c22765c1e0f4c77940ddb1fe9fcb939 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e5bf97a834eb44f7b0a09b8394d56ca8 = $(`<div id="html_e5bf97a834eb44f7b0a09b8394d56ca8" style="width: 100.0%; height: 100.0%;">453 W. 12th Ave</div>`)[0];
+            popup_5c22765c1e0f4c77940ddb1fe9fcb939.setContent(html_e5bf97a834eb44f7b0a09b8394d56ca8);
+        
+
+        marker_25c423a6076f4e3384f577c917da0377.bindPopup(popup_5c22765c1e0f4c77940ddb1fe9fcb939)
+        ;
+
+        
+    
+    
+            var marker_2cfde20122e44e78b8482fce0c1fbd03 = L.marker(
+                [49.272594, -123.12836],
+                {}
+            ).addTo(map_5396c8d1e59a4993a77119729f981dc9);
+        
+    
+            var icon_17db08e83e5f4630bfda851e57430cbe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-pin", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_2cfde20122e44e78b8482fce0c1fbd03.setIcon(icon_17db08e83e5f4630bfda851e57430cbe);
+        
+    
+        var popup_7f5f965522c34006b28eb7ff31314cda = L.popup({"maxWidth": "100%"});
+
+        
+            var html_994ba88bf703433c8734a5e5a387627f = $(`<div id="html_994ba88bf703433c8734a5e5a387627f" style="width: 100.0%; height: 100.0%;">456 Beach Crescent</div>`)[0];
+            popup_7f5f965522c34006b28eb7ff31314cda.setContent(html_994ba88bf703433c8734a5e5a387627f);
+        
+
+        marker_2cfde20122e44e78b8482fce0c1fbd03.bindPopup(popup_7f5f965522c34006b28eb7ff31314cda)
+        ;
+
+        
+    
+    
+            var marker_3eaa85c79cae489e9ef4b81e7d57e04f = L.marker(
+                [49.229904302024, -123.091350766374],
+                {}
+            ).addTo(map_5396c8d1e59a4993a77119729f981dc9);
+        
+    
+            var icon_6f660085b8ba431e851fbc48c817e00f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-pin", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_3eaa85c79cae489e9ef4b81e7d57e04f.setIcon(icon_6f660085b8ba431e851fbc48c817e00f);
+        
+    
+        var popup_2d568e47b19745128791b04db6b65175 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fae9a7e06a5b4640b1b39ed054cdc340 = $(`<div id="html_fae9a7e06a5b4640b1b39ed054cdc340" style="width: 100.0%; height: 100.0%;">646 E. 44th Ave</div>`)[0];
+            popup_2d568e47b19745128791b04db6b65175.setContent(html_fae9a7e06a5b4640b1b39ed054cdc340);
+        
+
+        marker_3eaa85c79cae489e9ef4b81e7d57e04f.bindPopup(popup_2d568e47b19745128791b04db6b65175)
+        ;
+
+        
+    
+</script>
