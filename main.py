@@ -45,5 +45,5 @@ for i in range(len(charging_stations['addresses'])):
         icon=folium.Icon(color='blue', icon="map-pin", prefix='fa')
     ).add_to(map)
 
-map.save('world_empty.html')
+map.save('index.html')
 
