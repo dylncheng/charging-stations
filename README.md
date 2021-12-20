@@ -5,3 +5,7 @@
 #### The project was meant as an exercise to familiarize myself with the following concepts:
 > - Data visualization
 > - API usage
+
+
+#### Tools Used:
+> - Folium
